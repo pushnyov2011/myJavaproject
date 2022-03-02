@@ -4,11 +4,13 @@ import java.util.Scanner;
 public class HomeWorkApp {
     public static void main (String[] args)
     {
-        System.out.println( "Задание1\n");
+        System.out.println( "Задание2\n");
         printThreeWords();
-        System.out.println( "\nЗадание2\n");
-        checkSumSign();
+        System.out.println( "Задание2 версия 2\n");
+        printThreeWordsV2():
         System.out.println( "\nЗадание3\n");
+        checkSumSign();
+        System.out.println( "\nЗадание4\n");
         printColor();
 
     }
@@ -18,6 +20,16 @@ public class HomeWorkApp {
     {
         System.out.println("Orange\nBanana\nApple"  );
     }
+
+    public static void printThreeWordsV2()
+    {
+        System.out.println("Orange"  );
+        System.out.println("Banana"  );
+        System.out.println("Apple"  );
+    }
+
+
+
     // Создайте метод checkSumSign(), в теле которого объявите две int переменные a и b, и
     //инициализируйте их любыми значениями, которыми захотите. Далее метод должен
     //просуммировать эти переменные, и если их сумма больше или равна 0, то вывести в
@@ -74,9 +86,8 @@ public  static  void  printColor()
         System.out.printl("что то не так!");
     }
 
-
-
 }
+
 }
 
 
