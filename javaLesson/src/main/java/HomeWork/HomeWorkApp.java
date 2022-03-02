@@ -7,7 +7,7 @@ public class HomeWorkApp {
         System.out.println( "Задание2\n");
         printThreeWords();
         System.out.println( "Задание2 версия 2\n");
-        printThreeWordsV2():
+        printThreeWordsV2();
         System.out.println( "\nЗадание3\n");
         checkSumSign();
         System.out.println( "\nЗадание4\n");
@@ -69,23 +69,23 @@ public  static  void  printColor()
     int value ;
     Scanner in = new Scanner(System.in);
     System.out.println("введите целое число ");
-    value = in.nextIn();
+    value = in.nextInt();
     if (value <= 0)
     {
-        System.out.printl("Красный");
+        System.out.println("Красный");
     }
     if (value > 0 && value <=100 )
     {
-        System.out.printl("Желтый");
+        System.out.println("Желтый");
 
     }
     if (value > 100)
     {
-        System.out.printl("Зеленый");
+        System.out.println("Зеленый");
     }
     else
     {
-        System.out.printl("что то не так!");
+        System.out.println("что то не так!");
     }
 
 }
