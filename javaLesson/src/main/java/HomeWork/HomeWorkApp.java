@@ -1,4 +1,5 @@
 package HomeWork;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class HomeWorkApp {
@@ -102,6 +103,7 @@ public  static  void  printColor()
         int a,b ;
         Scanner in = new Scanner(System.in);
         System.out.println ("введите целое число а");
+        //a = in.nextInt();
         a = in.nextInt();
         System.out.println ("а = " + a);
         System.out.println ("введите целое число b");
