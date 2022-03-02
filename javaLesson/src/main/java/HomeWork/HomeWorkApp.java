@@ -9,6 +9,7 @@ public class HomeWorkApp {
         System.out.println( "\nЗадание2\n");
         checkSumSign();
         System.out.println( "\nЗадание3\n");
+        printColor();
 
     }
 // Создайте метод printThreeWords(), который при вызове должен отпечатать в столбец
@@ -49,9 +50,36 @@ public class HomeWorkApp {
     //консоль метод должен вывести сообщение “Красный”, если лежит в пределах от 0 (0
     //исключительно) до 100 (100 включительно), то “Желтый”, если больше 100 (100
     //исключительно) - “Зеленый”;
+public  static  void  printColor()
+{
+    int value ;
+    Scanner in = new Scanner(System.in);
+    System.out.println("введите целое число ");
+    value = in.nextIn();
+    if (value <= 0)
+    {
+        System.out.printl("Красный");
+    }
+    if (value > 0 && value <=100 )
+    {
+        System.out.printl("Желтый");
 
-
+    }
+    if (value > 100)
+    {
+        System.out.printl("Зеленый");
+    }
+    else
+    {
+        System.out.printl("что то не так!");
+    }
 
 
 
 }
+}
+
+
+
+
+
