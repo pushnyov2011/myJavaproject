@@ -12,6 +12,8 @@ public class HomeWorkApp {
         checkSumSign();
         System.out.println( "\nЗадание4\n");
         printColor();
+        System.out.println ( "\nЗадание5\n");
+        compareNumbers();
 
     }
 // Создайте метод printThreeWords(), который при вызове должен отпечатать в столбец
@@ -87,7 +89,32 @@ public  static  void  printColor()
     }
 
 }
+//Создайте метод compareNumbers(), в теле которого объявите две int переменные a и
+//b, и инициализируйте их любыми значениями, которыми захотите. Если a больше или
+//равно b, то необходимо вывести в консоль сообщение “a >= b”, в противном случае “a
+//< b”;
 
+    public  static  void compareNumbers()
+    {
+        int a,b ;
+        Scanner in = new Scanner(System.in);
+        System.out.println ("введите целое число а");
+        a = in.nextInt();
+        System.out.println ("а = " + a);
+        System.out.println ("введите целое число b");
+        b = in.nextInt();
+        System.out.println ("а = " + b);
+        if (a>=b)
+        {
+            System.out.println("a >= b");
+        }
+        else
+        {
+            System.out.println(" a <  b");
+        }
+
+
+    }
 }
 
 
