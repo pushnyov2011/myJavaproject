@@ -6,13 +6,13 @@ public class HomeWorkApp {
     {
         System.out.println( "Задание2\n");
         printThreeWords();
-        System.out.println( "Задание2 версия 2\n");
+        System.out.println( "\nЗадание2 версия 2\n");
         printThreeWordsV2();
-        System.out.println( "\nЗадание3\n");
+       System.out.println( "\nЗадание3\n");
         checkSumSign();
         System.out.println( "\nЗадание4\n");
-        printColor();
-        System.out.println ( "\nЗадание5\n");
+       printColor();
+       System.out.println ( "\nЗадание5\n");
         compareNumbers();
 
     }
@@ -47,7 +47,7 @@ public class HomeWorkApp {
         System.out.println ("а = " + a);
         System.out.println ("введите целое число b");
         b = in.nextInt();
-        System.out.println ("а = " + b);
+        System.out.println ("b = " + b);
         // можно создать переменую с , где будет хранится сумма а + b
         if ((a+b)>=0)
         {
@@ -83,10 +83,13 @@ public  static  void  printColor()
     {
         System.out.println("Зеленый");
     }
+    /*
     else
     {
         System.out.println("что то не так!");
     }
+
+     */
 
 }
 //Создайте метод compareNumbers(), в теле которого объявите две int переменные a и
@@ -103,7 +106,7 @@ public  static  void  printColor()
         System.out.println ("а = " + a);
         System.out.println ("введите целое число b");
         b = in.nextInt();
-        System.out.println ("а = " + b);
+        System.out.println ("b = " + b);
         if (a>=b)
         {
             System.out.println("a >= b");
