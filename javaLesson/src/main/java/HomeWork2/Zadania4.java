@@ -26,7 +26,7 @@ public class Zadania4 {
         if (b>0){
         for (int i = 0; i < b ; i++)
             System.out.println(a);}
-        else System.out.println("так число бяло меньше или равер 0, то нчегт не выведу ");
+        else System.out.println("так как число было меньше или равно 0, то нчегт не выведу ");
 
     }
 
