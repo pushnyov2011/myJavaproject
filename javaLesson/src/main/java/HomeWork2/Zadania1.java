@@ -11,12 +11,12 @@ public class Zadania1 {
             System.out.println("введеди целое число b ");
             int b = sc.nextInt();
             sc.close();
-            System.out.println(metod(a,b));
+            System.out.println(provuslovia(a,b));
 
 
         }
 
-        public static boolean metod (int a ,int b)
+        public static boolean provuslovia (int a ,int b)
         {
             int c = a+b;
             if (c > 10 &&  c <=20 )
@@ -30,7 +30,8 @@ public class Zadania1 {
         /*
         Написать метод, принимающий на вход два целых числа и проверяющий, что их
 сумма лежит в пределах от 10 до 20 (включительно), если да – вернуть true, в
-противном случае – false.
+противном случае – false.5
+
 
          */
 

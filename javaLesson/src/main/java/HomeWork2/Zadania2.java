@@ -14,13 +14,13 @@ public class Zadania2 {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         sc.close();
-        System.out.println(metod(a));
+        System.out.println(provuslovia(a));
 
 
 
     }
 
-    public  static  String  metod(int a)
+    public  static  String  provuslovia (int a)
     {
         if (a >= 0)
         {
