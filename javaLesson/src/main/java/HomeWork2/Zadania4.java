@@ -15,6 +15,7 @@ public class Zadania4 {
        // System.out.println(st);
         System.out.println("Сколько рвз вывести эту строку ? введите число");
         int a = sc.nextInt();
+        sc.close();
        cicle(st,a);
 
 
