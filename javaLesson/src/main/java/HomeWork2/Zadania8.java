@@ -17,14 +17,14 @@ public class Zadania8 {
         zaop_mas(mas);
         System.out.println("певоначальный массив");
         prin_mass(mas);
-        System.out.println("массив по сле замены");
+        System.out.println("массив после замены");
         zamena_diag(mas);
         prin_mass(mas);
-        System.out.println("массив по сле замены");
+       // System.out.println("массив по сле замены");
         //zamena2(mas);
    //     zamena_diag2(mas);
 
-        prin_mass(mas);
+    //    prin_mass(mas);
 
         // в обратную  сторону пока не получилось сделать
 
@@ -37,7 +37,8 @@ public class Zadania8 {
 
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[i].length; j++) {
-                if (a[i] == a[j] ) {
+                if (a[i] == a[j] || a[(a.length -1)-i]==a[j] )
+                {
                     a[i][j] = 1;
                 }
 
