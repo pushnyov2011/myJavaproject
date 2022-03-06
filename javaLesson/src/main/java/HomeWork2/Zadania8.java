@@ -23,7 +23,9 @@ public class Zadania8 {
         System.out.println("массив по сле замены");
         //zamena2(mas);
    //     zamena_diag2(mas);
+
         prin_mass(mas);
+
         // в обратную  сторону пока не получилось сделать
 
 
@@ -32,11 +34,13 @@ public class Zadania8 {
 
     }
     public static void zamena_diag(int [][]a) {
+
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[i].length; j++) {
-                if (a[i] == a[j]) {
+                if (a[i] == a[j] ) {
                     a[i][j] = 1;
                 }
+
 
             }
 
