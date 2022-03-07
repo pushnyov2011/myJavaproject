@@ -14,12 +14,13 @@ public class Zadania2 {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         sc.close();
-        System.out.println(provuslovia(a));
+       // System.out.println(provuslovia(a));
+        System.out.println(provuslovia2(a));
 
 
 
     }
-
+    /*
     public  static  String  provuslovia (int a)
     {
         if (a >= 0)
@@ -27,5 +28,11 @@ public class Zadania2 {
             return  "Число положительное";
         }
         else return  "Число не положительное, а отрицательное ";
+    }
+    */
+    public  static  String  provuslovia2 (int a)
+    {
+        String s = (a >= 0) ? "Число положительное" : "Число не положительное, а отрицательное ";
+        return s;
     }
 }
