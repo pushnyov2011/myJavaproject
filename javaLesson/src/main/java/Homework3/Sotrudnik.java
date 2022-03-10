@@ -25,6 +25,7 @@ public class Sotrudnik
     }
     public  Sotrudnik(String FIO, String kem_rabotaet, String email, int telephone, double zp, int age)
     {
+        // ложно сработать , если ввели данне
         this.FIO = FIO;
         this.kem_rabotaet = kem_rabotaet;
         this.email = email;
