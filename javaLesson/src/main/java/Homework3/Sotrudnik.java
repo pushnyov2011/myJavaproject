@@ -11,6 +11,81 @@ public class Sotrudnik
     private double zp ; // зп может быть не целочисленыс например 30р 50к
     private  int age;
 
+    public String getFIO() {
+        return FIO;
+    }
+
+     //public void String
+
+    public void setFIO(String FIO)
+{
+        this.FIO = FIO;
+    }
+
+    public double getZp() {
+        return zp;
+    }
+
+    public void setZp(double zp) {         // добавил проверку на зп  . возраст и телефон , если будет отрицательное число , то умножит на -1 и сделает его положительным
+            if (zp >=0) {
+                this.zp = zp;
+            }
+            else
+            {
+                this.zp = zp * -1;
+
+            }
+
+
+
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        if (age >= 0 )
+        {
+            this.age = age;
+        }
+        else
+        {
+             this.age = age * -1;
+        }
+
+    }
+
+    public int getTelephone() {
+        return telephone;
+    }
+
+    public void setTelephone(int telephone) {
+        if (telephone >= 0 ) {
+            this.telephone = telephone;   }
+                    else
+        {
+            this.telephone = telephone * -1;
+
+        }
+        }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getKem_rabotaet() {
+        return kem_rabotaet;
+    }
+
+    public void setKem_rabotaet(String kem_rabotaet) {
+        this.kem_rabotaet = kem_rabotaet;
+    }
+
     //задание 2
     public  Sotrudnik() // Конструктор класса должен заполнять эти поля при создании объекта.
 
@@ -36,6 +111,7 @@ public class Sotrudnik
 
     }
 
+   // public  Sotrudnik ()
 
 
     public  static void main (String[] args)
@@ -45,6 +121,8 @@ public class Sotrudnik
 
         Sotrudnik person2 = new Sotrudnik("ТЕст","Qa", "yander@ys.ru", 54564546, 456.6 ,80);
         person2.print_info();
+
+        Sotrudnik person3 = new Sotrudnik();
 
 
 
@@ -60,12 +138,13 @@ public class Sotrudnik
 
     public  void  print_info()
     {
-        System.out.println("ФИО: " + FIO);
-        System.out.println("Должность: " + kem_rabotaet );
-        System.out.println("Почта: " + email );
-        System.out.println("Тел:+  " + telephone);
-        System.out.println("Зп: " + zp + " шоколадныхх монет");
-        System.out.println("Возраст:  " + age);
+        System.out.println("Досье на сотружника  ");
+        System.out.println("ФИО: " + getFIO());
+        System.out.println("Должность: " + getKem_rabotaet() );
+        System.out.println("Почта: " + getEmail() );
+        System.out.println("Тел:+  " + getTelephone());
+        System.out.println("Зп: " + getZp()+ " шоколадныхх монет");
+        System.out.println("Возраст:  " + getAge());
 
     }
 
