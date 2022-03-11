@@ -19,7 +19,7 @@ persArray[4] = new Person(...);
 
          */
         Sotrudnik[] person = new Sotrudnik[5]; //
-        person[0] = new Sotrudnik("Первый работник","Ломастер", "test@ya.ru", 12345679,5,30);
+        person[0] = new Sotrudnik("Первый работник","Ломастер", "test@ya.ru", 12345679,5,50);
         person[0].print_info();
         System.out.println();
         // хотел посмотреть как будет работать через геттер и сеттар работать
@@ -40,7 +40,7 @@ persArray[4] = new Person(...);
         person[4] = new Sotrudnik();
         System.out.println();
         person[4].print_info();
-        System.out.println("\n Сотрудники старше 40 лет.");
+        System.out.println("\nСотрудники старше 40 лет.\n");
 
        // С помощью цикла вывести информацию только о сотрудниках старше 40 лет.
 

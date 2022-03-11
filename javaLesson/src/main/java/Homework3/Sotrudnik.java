@@ -138,7 +138,7 @@ public class Sotrudnik
 
     public  void  print_info()
     {
-        System.out.println("Досье на сотружника  ");
+        System.out.println("Досье на сотрудника  ");
         System.out.println("ФИО: " + getFIO());
         System.out.println("Должность: " + getKem_rabotaet() );
         System.out.println("Почта: " + getEmail() );
