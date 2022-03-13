@@ -5,6 +5,17 @@ public class Animal {
    // private boolean CanSwim; // какиео живтоные не умееют плавать, поэтому нужна провека
     private int ogran_dist_run;
     private int orgran_dist_swim;
+    private static int animal_count; // по аналогии с котоми сделал
+    // плавание: кот не умеет плавать, собака 10 м.).
+
+
+    public static int getAnimal_count() {
+        return animal_count;
+    }
+
+    public static void setAnimal_count(int Animal_count) {
+       animal_count = Animal_count;
+    }
 
     public String getName() {
         return name;
@@ -13,6 +24,8 @@ public class Animal {
     public void setName(String name) {
         this.name = name;
     }
+
+
 /*
     public boolean isCanSwim() {
         return CanSwim;
@@ -43,6 +56,11 @@ public class Animal {
         else  this.orgran_dist_swim = orgran_dist_swim * -1;
 
 
+    }
+
+    public void print_count_animal()
+    {
+        System.out.println("Количество созданных живтоных : " + getAnimal_count() );
     }
 
     //. Все животные могут бежать и плыть. В качестве параметра каждому методу
