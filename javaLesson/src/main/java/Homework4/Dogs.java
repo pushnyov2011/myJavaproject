@@ -50,6 +50,8 @@ public class Dogs extends Animal {
     }
     public void print_count_dogs()
     {
+
         System.out.println("Количество созданных собак : " + getDogs_count() );
     }
+
 }

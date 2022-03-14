@@ -92,4 +92,11 @@ public class Animal {
     //    else  System.out.println("Не умею плавать и воду не люблю :)");
 
     }
+
+    public void print_info_animal()
+    {
+        System.out.println("Инфо");
+        System.out.println("Имя/ кличка: "+ getName());
+
+    }
 }
