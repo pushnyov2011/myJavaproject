@@ -1,6 +1,6 @@
 package Homework4;
 
-public class Animal {
+public  abstract class Animal {
     private  String name;
    // private boolean CanSwim; // какиео живтоные не умееют плавать, поэтому нужна провека
     private int ogran_dist_run;
@@ -99,4 +99,6 @@ public class Animal {
         System.out.println("Имя/ кличка: "+ getName());
 
     }
+
+
 }

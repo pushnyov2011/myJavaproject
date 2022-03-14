@@ -52,6 +52,18 @@ public class TestClass {
 
         }
 
+        ///задание 6
+        System.out.println("---------------------------------");
+        Payment.Credit_cart credit_cart = new Payment.Credit_cart();
+        Payment.Shopping_car shopping_car = new Payment.Shopping_car();
+        Payment payment = new Payment();
+        payment.buy(credit_cart,shopping_car);
+        credit_cart.print_ino();
+        shopping_car.info_shop_car();
+
+
+
+
 
 
 
