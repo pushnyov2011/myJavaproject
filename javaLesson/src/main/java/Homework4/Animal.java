@@ -76,7 +76,7 @@ public  abstract class Animal {
     {
         if (dist <= getOgran_dist_run() ){
         System.out.println(getName() + " Пробежал: " + dist + " m" ) ;}
-        else {System.out.println(getName() + " Не сможет пробежать!!!!");
+        else {System.out.println(getName() + " Не сможет пробежать такую дистанцию!!!!");
         }
     }
     public void swim (int dist)
