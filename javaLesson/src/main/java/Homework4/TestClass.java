@@ -62,6 +62,23 @@ public class TestClass {
         shopping_car.info_shop_car();
 
 
+        System.out.println("---------------------------------");
+        /// задание 7
+        Park.Atraction atraction = new Park.Atraction();
+        atraction.atraction_info();
+        System.out.println("Первоначальный класс");
+        System.out.println("---------------------------------");
+        atraction.zapoln_info_about_attraction();
+        System.out.println("---------------------------------");
+        System.out.println("Показать класс после изменения");
+        atraction.atraction_info();
+
+
+
+
+
+
+
 
 
 
