@@ -62,7 +62,7 @@ public class Zadania1 {
             mas[b] = mas2[a];
 
         }
-       else   if ( a >= mas.length  || b >= mas.length || 0 > a || 0 > b  )
+       else   if ( a >= mas.length  || b >= mas.length || 0 > a || 0 > b )
         {
         System.out.println("в массиве нет такого элемента \n массив остался прежним ");
         }
