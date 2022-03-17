@@ -3,6 +3,26 @@ import java.util.Scanner;
 
 public class Park {
 
+    public String name_park;
+
+    public String getName_park() {
+        return name_park;
+    }
+
+    public void setName_park(String name_park) {
+        this.name_park = name_park;
+    }
+
+    public Park(String name_park) {
+        setName_park(name_park);
+    }
+
+    public  Park()
+    {
+        this. name_park = "Тестовый парк";
+    }
+
+
     //Создать класс Park с внутренним классом, с помощью объектов которого можно
     //хранить информацию об аттракционах, времени их работы и стоимости.
 
@@ -13,6 +33,7 @@ public class Park {
         private  String lanch_start;
         private  String lanch_finish;
         private  int atraction_cost;
+
 
         public String getAtraction_name() {
             return atraction_name;
@@ -112,12 +133,7 @@ public class Park {
             setAtraction_cost(sc.nextInt());
             atraction_info();
 
-
-
-
-
-
-
+            
         }
 
 
