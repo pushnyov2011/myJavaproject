@@ -1,0 +1,84 @@
+package HomeWork6;
+
+import javax.swing.text.html.parser.Parser;
+import java.util.Arrays;
+import java.util.function.ToIntFunction;
+
+public class Zadania1 {
+
+
+    //MyArraySizeException
+    /*
+    Напишите метод, на вход которого подается двумерный строковый массив
+размером 4х4. При подаче массива другого размера необходимо бросить
+исключение MyArraySizeException
+     */
+     public static void main(String[] args) {
+         String [][] mas = new String[4][3];
+       //  System.out.println(mas.length);
+         try {
+             mas_four_on_four(mas);
+         } catch (MyArraySizeException | MyArrayDataException e) {
+             e.printStackTrace();
+         }
+
+     }
+
+    /*
+    алее метод должен пройтись по всем элементам массива, преобразовать в
+int и просуммировать. Если в каком-то элементе массива преобразование не
+удалось (например, в ячейке лежит символ или текст вместо числа), должно быть
+брошено исключение MyArrayDataException с детализацией, в какой именно
+ячейке лежат неверные данные.
+     */
+    public static void mas_four_on_four(String[][]  mas ) throws MyArraySizeException, MyArrayDataException
+    {
+        int suma = 0;
+ try{
+
+        if( mas.length !=4)
+        {
+            throw new MyArraySizeException("Длина массива больше или меньше 4 -рех");
+        }
+        for (int i=0; i < mas.length ;i ++)
+        {
+
+            if (mas[i].length!= 4 )
+            {
+                throw new MyArraySizeException("Длина массива больше или меньше 4 -рех\"");
+            }
+            for ( int j = 0; j <mas[i].length; j++)
+            {
+               try
+                 {
+                    suma = suma + Integer.parseInt(mas[i][j]); // пере водим стринг в инт , если инт то сложит
+                }
+
+                catch ( NumberFormatException e)
+                {
+                    throw  new MyArrayDataException("Элементмасива в ячейке["+ i+"]" + "["+j+"]"+ "Не число типа инт");
+                }
+
+
+            }
+              //  count_row = j;
+        }
+
+
+    }
+ finally {
+     System.out.println(suma);
+ }
+ }
+
+
+    }
+
+
+
+
+
+
+
+
+
