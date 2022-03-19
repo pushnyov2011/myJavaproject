@@ -15,9 +15,12 @@ public class Zadania1 {
      */
      public static void main(String[] args) {
          String [][] mas = new String[4][3];
+
+         String [][] ms2 = {{"5","3","2","1"}, {"1","3","2","1"}, {"1","3","2","1"}, {"1","j","2","J"}};
        //  System.out.println(mas.length);
          try {
-             mas_four_on_four(mas);
+            // mas_four_on_four(mas);
+             mas_four_on_four(ms2);
          } catch (MyArraySizeException | MyArrayDataException e) {
              e.printStackTrace();
          }
@@ -45,7 +48,7 @@ int и просуммировать. Если в каком-то элемент�
 
             if (mas[i].length!= 4 )
             {
-                throw new MyArraySizeException("Длина массива больше или меньше 4 -рех\"");
+                throw new MyArraySizeException("Колонок в массиве больше или мешьне 4 - рех");
             }
             for ( int j = 0; j <mas[i].length; j++)
             {
@@ -67,7 +70,7 @@ int и просуммировать. Если в каком-то элемент�
 
     }
  finally {
-     System.out.println(suma);
+     System.out.println("Сумма элменоов массива равна : " + suma);
  }
  }
 
